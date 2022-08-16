@@ -1,24 +1,5 @@
-# README
+# P E T / S O C I A L
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello! This is the code for my app, Pet Social, which is a social media app for people to post and share their pets and connect with others about their pets! Find the deployed app at https://polar-bayou-11455.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks for checking it out!
