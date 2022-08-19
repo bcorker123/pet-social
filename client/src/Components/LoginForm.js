@@ -41,7 +41,7 @@ function LoginForm({ handleLogin }) {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} id="login-form">
       <Form.Group>
         <Form.Label>Username</Form.Label>
         <Form.Control

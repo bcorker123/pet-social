@@ -42,7 +42,7 @@ function SignupForm({ handleLogin }) {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} id="signup-form">
       <Form.Group>
         <Form.Label>Username</Form.Label>
         <Form.Control

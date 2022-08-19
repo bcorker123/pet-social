@@ -1,0 +1,35 @@
+#navbar {
+    justify-content: space-around;
+    padding-right: 20px;
+    max-width: 500px;
+}
+
+#signup-form {
+    max-width: fit-content;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+#login-form {
+    max-width: fit-content;
+    justify-content: center;
+    margin: auto;
+}
+
+#footer-container {
+    position: fixed;
+    bottom:0;
+    max-width: 1900px;
+}
+
+#footer-card {
+    max-width: 1000px;
+    text-align: center;
+    margin:auto;
+}
+
+#footer-link {
+    margin:auto;
+    text-align: center;
+}

@@ -6,6 +6,7 @@ import User from "./User";
 import LoginForm from "./LoginForm";
 import SignupForm from "./SignupForm";
 import Home from "./Home";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,17 +16,11 @@ function App() {
         <Route path="/user">
           <User />
         </Route>
-        <Route path="/signup">
-          <SignupForm />
-        </Route>
-        <Route path="/login">
-          <LoginForm />
-        </Route>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-      <div>footer</div>
+      <Footer />
     </div>
   );
 }
