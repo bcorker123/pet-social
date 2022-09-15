@@ -2,19 +2,7 @@
     justify-content: space-around;
     padding-right: 20px;
     max-width: 500px;
-}
-
-#signup-form {
-    max-width: fit-content;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-}
-
-#login-form {
-    max-width: fit-content;
-    justify-content: center;
-    margin: auto;
+    outline:2px solid rgb(67, 231, 182);
 }
 
 #footer-container {
