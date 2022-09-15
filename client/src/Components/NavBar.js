@@ -5,20 +5,29 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 
-function NavBar() {
+function NavBar({ handleLogin, handleLogout, user }) {
   return (
     <Navbar id="navbar" bg="light">
       <Nav.Link href="/">Home</Nav.Link>
-      <NavDropdown title="Username">
-        <NavDropdown.Item href="user">Profile</NavDropdown.Item>
-        <NavDropdown.Item href="logout">Logout</NavDropdown.Item>
-      </NavDropdown>
-      <NavDropdown title="Sign Up">
-        <SignupForm />
-      </NavDropdown>
-      <NavDropdown title="Login">
-        <LoginForm />
-      </NavDropdown>
+      {user.id ? (
+        <>
+          <NavDropdown title={user.username.toUpperCase()}>
+            <NavDropdown.Item href="user">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="logout" onClick={handleLogout}>
+              Logout
+            </NavDropdown.Item>
+          </NavDropdown>
+        </>
+      ) : (
+        <>
+          <NavDropdown title="Sign Up">
+            <SignupForm handleLogin={handleLogin} />
+          </NavDropdown>
+          <NavDropdown title="Login">
+            <LoginForm handleLogin={handleLogin} />
+          </NavDropdown>
+        </>
+      )}
     </Navbar>
   );
 }
